@@ -49,7 +49,6 @@
 		7934822D1C3F559B00862D3E /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7934821B1C3F559B00862D3E /* UIImageView+HighlightedWebCache.m */; };
 		7934822E1C3F559B00862D3E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7934821D1C3F559B00862D3E /* UIImageView+WebCache.m */; };
 		7934822F1C3F559B00862D3E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7934821F1C3F559B00862D3E /* UIView+WebCacheOperation.m */; };
-		793482321C3F5FE000862D3E /* EveryDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 793482311C3F5FE000862D3E /* EveryDayModel.m */; };
 		793482351C3F9E5900862D3E /* EveryDayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793482341C3F9E5900862D3E /* EveryDayTableViewCell.m */; };
 		7934823B1C3FCF4C00862D3E /* BlurImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7934823A1C3FCF4C00862D3E /* BlurImageView.m */; };
 		793482461C3FE47200862D3E /* ContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 793482451C3FE47200862D3E /* ContentScrollView.m */; };
@@ -60,6 +59,7 @@
 		79BABB8A1C40DE8E00A3EAC0 /* video-play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BABB891C40DE8E00A3EAC0 /* video-play@3x.png */; };
 		79BABB941C40EA0800A3EAC0 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BABB931C40EA0800A3EAC0 /* PlayViewController.m */; };
 		8F2CC8A51C51D90000DEBAA5 /* EveryDayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793482341C3F9E5900862D3E /* EveryDayTableViewCell.m */; };
+		8F4BFA791C5220C800F3A0BC /* EveryDayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BFA781C5220C800F3A0BC /* EveryDayModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,8 +173,6 @@
 		7934821D1C3F559B00862D3E /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		7934821E1C3F559B00862D3E /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		7934821F1C3F559B00862D3E /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		793482301C3F5FE000862D3E /* EveryDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EveryDayModel.h; path = ../../PastDay/Model/EveryDayModel.h; sourceTree = "<group>"; };
-		793482311C3F5FE000862D3E /* EveryDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EveryDayModel.m; path = ../../PastDay/Model/EveryDayModel.m; sourceTree = "<group>"; };
 		793482331C3F9E5900862D3E /* EveryDayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EveryDayTableViewCell.h; sourceTree = "<group>"; };
 		793482341C3F9E5900862D3E /* EveryDayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EveryDayTableViewCell.m; sourceTree = "<group>"; };
 		793482391C3FCF4C00862D3E /* BlurImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurImageView.h; sourceTree = "<group>"; };
@@ -192,6 +190,8 @@
 		79BABB891C40DE8E00A3EAC0 /* video-play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video-play@3x.png"; sourceTree = "<group>"; };
 		79BABB921C40EA0800A3EAC0 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		79BABB931C40EA0800A3EAC0 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		8F4BFA771C5220C800F3A0BC /* EveryDayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EveryDayModel.h; sourceTree = "<group>"; };
+		8F4BFA781C5220C800F3A0BC /* EveryDayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EveryDayModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,8 +337,8 @@
 		793481AF1C3F4E5400862D3E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				793482301C3F5FE000862D3E /* EveryDayModel.h */,
-				793482311C3F5FE000862D3E /* EveryDayModel.m */,
+				8F4BFA771C5220C800F3A0BC /* EveryDayModel.h */,
+				8F4BFA781C5220C800F3A0BC /* EveryDayModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -688,10 +688,10 @@
 				793481ED1C3F555000862D3E /* AFHTTPRequestOperationManager.m in Sources */,
 				793481F11C3F555000862D3E /* AFURLConnectionOperation.m in Sources */,
 				793482211C3F559B00862D3E /* NSData+ImageContentType.m in Sources */,
-				793482321C3F5FE000862D3E /* EveryDayModel.m in Sources */,
 				793482251C3F559B00862D3E /* SDWebImageDownloader.m in Sources */,
 				793481F91C3F555000862D3E /* UIImageView+AFNetworking.m in Sources */,
 				793481EC1C3F555000862D3E /* AFHTTPRequestOperation.m in Sources */,
+				8F4BFA791C5220C800F3A0BC /* EveryDayModel.m in Sources */,
 				793482461C3FE47200862D3E /* ContentScrollView.m in Sources */,
 				7934822D1C3F559B00862D3E /* UIImageView+HighlightedWebCache.m in Sources */,
 				793481F61C3F555000862D3E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
