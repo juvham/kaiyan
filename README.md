@@ -8,12 +8,12 @@
 <ul style="width:100%;overflow:hidden;">
     <li style="float:left;margin-right:2%;width:49%;height:500;">
         <a>
-            <img src="http://code.cocoachina.com/uploads/attachments/20160122/129297/dd9dd391527a23873e0d005dba4135b9.gif" height="500">
+         <img src="http://code.cocoachina.com/uploads/attachments/20160122/129297/dd9dd391527a23873e0d005dba4135b9.gif" height="500">
         </a>
     </li>
     <li style="float:left;margin-right:2%;width:49%;height:500;">
         <a>
-            <img src="http://code.cocoachina.com/uploads/attachments/20160122/129297/72d468015d45c593a83231ce3ade7468.gif" height="500">
+          <img src="http://code.cocoachina.com/uploads/attachments/20160122/129297/72d468015d45c593a83231ce3ade7468.gif" height="500">
         </a>
     </li>
     <li style="float:left;margin-right:2%;width:49%;height:500;">
