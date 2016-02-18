@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KRVideoPlayerController.h"
 @class EveryDayModel;
 
-@interface PlayViewController : UIViewController
+@interface PlayViewController : KRVideoPlayerController
 
 @property (nonatomic, strong) NSArray *modelArray;
 

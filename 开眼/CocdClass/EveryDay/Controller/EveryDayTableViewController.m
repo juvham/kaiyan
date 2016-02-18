@@ -14,6 +14,7 @@
 #import "rilegouleView.h"
 #import "CustomView.h"
 #import "ImageContentView.h"
+#import "KRVideoPlayerController.h"
 
 @interface SDWebImageManager  (cache)
 
@@ -36,6 +37,8 @@
 @property (nonatomic, retain) NSMutableDictionary *selectDic;
 
 @property (nonatomic, retain) NSMutableArray *dateArray;
+
+@property (nonatomic, strong) KRVideoPlayerController *videoController;
 
 @end
 
@@ -62,6 +65,16 @@
     return _dateArray;
 }
 
+- (KRVideoPlayerController *)videoController {
+    
+    if (_videoController == nil) {
+        
+        CGFloat width = [UIScreen mainScreen].bounds.size.width;
+        _videoController = [[KRVideoPlayerController alloc] initWithFrame:CGRectMake(0, 0, width, width*(9.0/16.0))];
+    }
+    
+    return _videoController;
+}
 
 - (void)jsonSelection{
     
@@ -369,15 +382,10 @@
 #pragma mark -------------- 点击手势触发事件 -----------
 
 - (void)tapAction{
-    
-    PlayViewController *playVC = [[PlayViewController alloc]init];
-    
-    playVC.modelArray = _array;
-    
-    playVC.index = self.currentIndexPath.row;
-    
-//    [self.navigationController pushViewController:playVC animated:YES];
-    [self presentViewController:playVC animated:YES completion:nil];
+    EveryDayModel *model = [_array objectAtIndex:self.currentIndexPath.row];
+
+    [self.videoController showInWindow];
+    self.videoController.contentURL =[NSURL URLWithString:model.playUrl];
 }
 
 @end

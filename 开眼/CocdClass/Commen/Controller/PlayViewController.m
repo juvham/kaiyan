@@ -12,29 +12,34 @@
 #import "EveryDayModel.h"
 @interface PlayViewController ()
 
-@property (nonatomic, strong) AVPlayer *player;
-
-@property (nonatomic, strong) AVPlayerItem *playerItem;
+//@property (nonatomic, strong) AVPlayer *player;
+//
+//@property (nonatomic, strong) AVPlayerItem *playerItem;
 
 @end
 
 @implementation PlayViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    EveryDayModel *model = _modelArray[_index];
+- (void)setModelArray:(NSArray *)modelArray {
     
-    // Do any additional setup after loading the view.
+    if (![modelArray isEqualToArray:_modelArray]) {
+        
+        _modelArray = modelArray;
+    }
 }
 
-// 根据URL播放视频
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setIndex:(NSInteger)index {
+    
+    if (index != _index) {
+        
+        _index = index;
+        
+        EveryDayModel *model = [_modelArray objectAtIndex:index];
+        [self setContentURL:[NSURL URLWithString:model.playUrl]];
+    }
+    
 }
+
 
 /*
 #pragma mark - Navigation
